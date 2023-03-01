@@ -1,0 +1,91 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="UHadoop" type="SparkSubmitConfigurationType" factoryName="SshSparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
+    <option name="archives">
+      <list />
+    </option>
+    <option name="artifactArgs" value="" />
+    <option name="artifactPath">
+      <FilePath>
+        <option name="path" value="OTUS_Spark_DataApis:jar" />
+        <option name="type" value="ARTIFACT" />
+      </FilePath>
+    </option>
+    <option name="beforeShellScript" value="cd /home/toor" />
+    <option name="className" value="ru.broom.Main" />
+    <option name="clusterManager" value="YARN" />
+    <option name="conf" value="" />
+    <option name="deployMode" value="CLIENT" />
+    <option name="driverClassPath">
+      <list />
+    </option>
+    <option name="driverCores" value="" />
+    <option name="driverJavaOptions" value="" />
+    <option name="driverLibraryPath">
+      <list />
+    </option>
+    <option name="driverMemory" value="" />
+    <option name="envParams" value="" />
+    <option name="excludePackages" value="" />
+    <option name="executorCores" value="" />
+    <option name="executorMemory" value="" />
+    <option name="files">
+      <list />
+    </option>
+    <option name="interactive" value="false" />
+    <option name="jars">
+      <list />
+    </option>
+    <option name="keytab">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="CUSTOM" />
+      </FilePath>
+    </option>
+    <option name="master" value="local" />
+    <option name="numExecutors" value="" />
+    <option name="packages" value="" />
+    <option name="principal" value="" />
+    <option name="projectPathOnTarget" />
+    <option name="propertiesFile">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="CUSTOM" />
+      </FilePath>
+    </option>
+    <option name="proxyUser" value="" />
+    <option name="pyFiles">
+      <list />
+    </option>
+    <option name="queue" value="" />
+    <option name="repositories" value="" />
+    <option name="selectedOptions">
+      <list />
+    </option>
+    <option name="shellExecutor" value="/bin/bash" />
+    <option name="sparkHome" value="/usr/local/spark" />
+    <option name="sparkMonitoringDriverId" value="" />
+    <option name="sshConfigId" value="00a19926-5759-4674-a7ed-292480038f60" />
+    <option name="supervise" value="false" />
+    <option name="targetDirectory">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="SERVER" />
+      </FilePath>
+    </option>
+    <option name="totalExecutorCores" value="" />
+    <option name="verbose" value="false" />
+    <option name="workDirectoryPath">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="SERVER" />
+      </FilePath>
+    </option>
+    <method v="2">
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="OTUS_Spark_DataApis:jar" />
+      </option>
+      <option name="SftpSparkFileUpload" enabled="true" />
+    </method>
+  </configuration>
+</component>

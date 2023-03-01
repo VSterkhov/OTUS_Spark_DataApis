@@ -1,0 +1,20 @@
+version: '3.9'
+
+volumes:
+  postgres-spark-warehouse:
+
+services:
+  spark-db:
+    container_name: spark-db
+    image: postgres:11-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres-spark-warehouse:/var/lib/postgresql/data
+    networks:
+      - spark-net
+networks:
+  spark-net:

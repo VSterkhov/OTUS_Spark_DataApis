@@ -5,6 +5,8 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
 
-    <include file="db/KOMPZ-29-create-case-number-sequence.xml" relativeToChangelogFile="true"/>
+    <include file="db/initialize.xml" relativeToChangelogFile="true"/>
+
+<!--    <include file="db/create_warehouse.xml" relativeToChangelogFile="true"/>-->
 
 </databaseChangeLog>
