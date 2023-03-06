@@ -5,8 +5,31 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
 
-    <include file="db/initialize.xml" relativeToChangelogFile="true"/>
+    <changeSet id="initialize_spark_warehouse" author="vladislav.sterkhov">
+        <sqlFile path="scripts/initialize_tables.sql" relativeToChangelogFile="true"/>
+        <rollback>
+            <sqlFile path="scripts/rollback_initialize_tables.sql" relativeToChangelogFile="true"/>
+        </rollback>
+    </changeSet>
 
-<!--    <include file="db/create_warehouse.xml" relativeToChangelogFile="true"/>-->
+    <!--    <changeSet id="popular_borough_warehouse" author="vladislav.sterkhov">-->
+    <!--        <createTable schemaName="spark_warehouse" tableName="tstate">-->
+    <!--            <column name="id" type="bigserial">-->
+    <!--                <constraints primaryKey="true"-->
+    <!--                             primaryKeyName="pktstate_id"/>-->
+    <!--            </column>-->
+    <!--            <column name="title" type="varchar(255)">-->
+    <!--                <constraints nullable="false"/>-->
+    <!--            </column>-->
+    <!--            <column name="guid" type="varchar(38)">-->
+    <!--                <constraints nullable="false"-->
+    <!--                             unique="true"-->
+    <!--                             uniqueConstraintName="iutstate_guid"/>-->
+    <!--            </column>-->
+    <!--            <column name="state" type="varchar(255)"/>-->
+    <!--            <column name="type" type="spark_warehouse.state_type"/>-->
+    <!--        </createTable>-->
+    <!--    </changeSet>-->
+
 
 </databaseChangeLog>

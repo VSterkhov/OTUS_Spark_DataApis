@@ -1,0 +1,1 @@
+DROP SCHEMA IF EXISTS spark_warehouse CASCADE;
