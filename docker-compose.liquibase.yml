@@ -4,7 +4,7 @@ services:
   spark-warehouse-liquibase:
     container_name: spark-warehouse-liquibase
     image: liquibase/liquibase
-    command: --driver=org.postgresql.Driver --url=jdbc:postgresql://172.24.102.73:5432/postgres --username=postgres --password=postgres --changeLogFile=changelog.xml update
+    command: --driver=org.postgresql.Driver --url=jdbc:postgresql://172.30.75.175:5432/postgres --username=postgres --password=postgres --changeLogFile=changelog.xml update
     volumes:
       - ./liquibase/changelog.xml:/liquibase/changelog.xml
       - ./liquibase/scripts:/liquibase/scripts

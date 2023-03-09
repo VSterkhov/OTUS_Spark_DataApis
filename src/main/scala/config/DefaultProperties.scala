@@ -5,8 +5,10 @@ import java.util.Properties
 
 object DefaultProperties {
   object JDBC {
-    val properties = new Properties()
-    properties.load(getClass.getResource("/jdbc.properties").openStream())
-    val URL: String = properties.getProperty("url")
+    val URL = "jdbc:postgresql://uhadoop.localdomain/postgres"
+    val PROPS = new Properties()
+    PROPS.setProperty("driver", "org.postgresql.Driver")
+    PROPS.setProperty("user", "postgres")
+    PROPS.setProperty("password", "postgres")
   }
 }
